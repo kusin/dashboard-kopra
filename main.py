@@ -9,8 +9,6 @@ import numpy as np
 
 # library data visualization
 import plotly.express as px
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # call method from other file
 from class_dataset import dataset
