@@ -10,8 +10,6 @@ import numpy as np;
 # library data visualization
 import plotly.express as px;
 import plotly.graph_objects as go;
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # define class dataset
 class dataset:
