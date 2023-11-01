@@ -1,4 +1,4 @@
-# Peningkatan akurasi untuk klasifikasi jenis kopra menggunakan metode ensemble learning
+# Increasing accuracy for classification of copra types using the ensemble learning method
 
 ![image](img/streamlit_kopra1.png)
 
