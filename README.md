@@ -1,7 +1,7 @@
 # Peningkatan akurasi untuk klasifikasi jenis kopra menggunakan metode ensemble learning
 
 ![image](img/streamlit_kopra1.png)
-
+![image](img/streamlit_kopra2.png)
 
 ## Bahasa dan Tools
 - Python 3.9.18
