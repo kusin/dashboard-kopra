@@ -1,5 +1,7 @@
 # Increasing accuracy for classification of copra types using the ensemble learning method
+
 - https://dashboard-kopra-uin-jakarta.streamlit.app/
+
 ![image](img/streamlit_kopra1.png)
 
 ## Bahasa dan Tools
