@@ -20,7 +20,7 @@ st.set_page_config(
     page_title="My Dasboard Kopra",
     page_icon="🧊",
     layout="wide",
-    initial_sidebar_state="auto",
+    initial_sidebar_state="expanded",
     menu_items={
         "Get Help": "https://www.github.com/kusin",
         "Report a bug": "https://www.github.com/kusin",
@@ -48,7 +48,7 @@ with st.container():
 # container-dataset
 with st.container():
     # show dataset of type copra
-    st.text("Dataset of type copra")
+    st.markdown("- Dataset of type copra")
     st.dataframe(data=np.round(dataset().get_dataset(),2), use_container_width=True, hide_index=True)
 
 # container result-supervised
@@ -66,4 +66,4 @@ with st.container():
 # container footer
 with st.container():
     avs.add_vertical_space(2);
-    st.text("Copyright all rights reserved 2023 by Aryajaya Alamsyah, M.Kom.");
+    st.markdown("<p style='font-family:Tahoma'>Copyright all rights reserved 2023 by UIN Syarif Hidayatullah Jakarta</p>", unsafe_allow_html=True);
