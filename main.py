@@ -29,7 +29,6 @@ st.set_page_config(
 
 # container-sidebar
 with st.sidebar:    
-    st.text("Setting your models classification")
     st.selectbox(
         "Choose a supervised learning algorithm",
         ("Use all algorithm", "K nearest-neighbor", "Suport Vector Machine", "Decision Tree (C45)", "Gaussian Naive Bayes", "Logistic Regression ", "Linear Discriminant Analysis", "Quadratic Discriminant Analysis")
@@ -43,6 +42,9 @@ with st.sidebar:
         ("Use all measurement", "accuracy", "precision", "recall", "f1-score")
     )
     st.button("Submit", type="primary")
+
+    st.write("<hr>", unsafe_allow_html=True)
+    st.info("Created by Aryajaya Alamsyah, M.Kom")
 
 # container-header
 with st.container():
