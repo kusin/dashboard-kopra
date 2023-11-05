@@ -37,12 +37,7 @@ with st.sidebar:
         "Choose a ensemble learning algorithm",
         ("Use all algorithm", "Bagging", "AdaBoost", "Stacking", "Voting")
     )
-    st.selectbox(
-        "Choose a performance measurement",
-        ("Use all measurement", "accuracy", "precision", "recall", "f1-score")
-    )
     st.button("Submit", type="primary")
-
     st.write("<hr>", unsafe_allow_html=True)
     st.info("Created by Aryajaya Alamsyah, M.Kom")
 
@@ -56,7 +51,7 @@ with st.container():
     st.text("Dataset of type copra")
     st.dataframe(data=np.round(dataset().get_dataset(),2), use_container_width=True, hide_index=True)
 
-# container-result
+# container result-supervised
 with st.container():
     # visualization supervised learning
     df_supervised = dataset.get_result_supervised()    
@@ -64,6 +59,8 @@ with st.container():
         visualization.line_plot(df_supervised, "Accuracy of supervised learning"), use_container_width=True
     )
 
+# container result-ensemble
+with st.container():
     # visualization ensemble learning
     df_ensemble = dataset.get_result_ensemble()    
     st.plotly_chart(
