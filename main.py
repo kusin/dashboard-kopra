@@ -1,6 +1,5 @@
 # library ui-dashboard
 import streamlit as st
-from streamlit_extras import add_vertical_space as avs
 
 # library manipulation dataset
 import pandas as pd
