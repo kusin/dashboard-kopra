@@ -62,8 +62,3 @@ with st.container():
     # visualization ensemble learning
     df_ensemble = dataset.get_result_ensemble()    
     st.plotly_chart(visualization.line_plot(df_ensemble, "Accuracy of ensemble learning"), use_container_width=True)
-
-# container footer
-with st.container():
-    avs.add_vertical_space(2);
-    st.markdown("<p style='font-family:Tahoma'>Copyright all rights reserved 2023 by UIN Syarif Hidayatullah Jakarta</p>", unsafe_allow_html=True);
