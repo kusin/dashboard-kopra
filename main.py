@@ -13,6 +13,7 @@ import plotly.express as px
 
 # call method from other file
 from class_dataset import dataset
+from class_preprocessing import preprocessing
 from class_visualization import visualization
 
 # set config ui-dasboard streamlit
@@ -47,9 +48,12 @@ with st.container():
 
 # container-dataset
 with st.container():
+    # get dataset
+    df = dataset().get_dataset()
+    df = preprocessing().normalization(df)
     # show dataset of type copra
     st.markdown("- Dataset of type copra")
-    st.dataframe(data=np.round(dataset().get_dataset(),2), use_container_width=True, hide_index=True)
+    st.dataframe(data=np.round(df,4), use_container_width=True, hide_index=True)
 
 # container result-supervised
 with st.container():
